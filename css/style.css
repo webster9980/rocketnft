@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    overflow-x: hidden;
+    font-family: 'Montserrat' , sans-serif;
+}
+
+body{
+    color: #ffffff;
+    background-color: black;
+}
+
+.conteudo-cabecalho{
+    background-image: url(../assets/background.png);
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    margin-top: 20px;
+}
+
+.nav-cabecalho >ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 40px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.btn-cabecalho{
+    display: inline-block;
+    align-items: center;
+    padding: 10px;
+    border: none;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+}
+
+.sub-cabecalho{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    margin-top: 80px;
+    padding: 0px 40px;
+    gap: 20px;
+}
+
+
+.div-subcabecalho1 , .div-subcabecalho2 ,.div-subcabecalho3{
+    width: 30%;
+}
+
+.div-subcabecalho1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.div-subcabecalho1 >h3{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.94px;
+    margin-bottom: 60px;
+}
+
+.div-subcabecalho2{
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60.95px;
+    margin-left: 80px;
+}
+
+.div-subcabecalho2 >label>strong{
+    color: #FF5B50;
+}
+
+.div-subcabecalho3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-subcabecalho{
+    max-width: 180px;
+    max-height: 180px;
+}
+
+/* fim do header */
+
+.galeria{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin-top: 90px;
+}
+
+.agrupamento{
+    width: 100%;
+    display: flex;  
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding: 0px 40px;
+    gap: 10px;
+}
+
+.foto-galeria{
+    max-width: 340px;
+    max-height: 240px;
+    border: 1px solid #ffffff;
+}
+/* Fim da partes dos NFTs*/
+
+.descrition{
+    width: 100vw;
+    display: grid;
+    grid-template-areas: 
+    'sideleft header-descrition header-descrition' 
+    'sideleft img-nft img-nft'
+    ;
+}
+
+.sideleft{
+    grid-area: sideleft;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 70px;
+    border-right: 1px solid #5a5757 ;
+    padding-top: 50px;
+    gap: 26px;
+}
+
+.numbers-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sideleft h1{
+    margin-top: 20px;
+    font-size: 50px;
+    font-style: SemiBold;
+    line-height: 61px;
+}
+
+.sideleft label{
+    font-style: SemiBold;
+    color: #5a5757;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.header-descrition{
+    grid-area: header-descrition;
+    display: flex;
+    flex-direction: row;
+    padding-top: 40px;
+}
+
+.nft-descrition{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px 60px;
+    gap: 40px;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.nft-descrition strong{
+    color: #FF5B50;
+}
+
+.nft-descrition >a{
+    color: #ffffff;
+}
+
+.nft-descrition >article{
+    text-align: justify;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.img-nft{
+    grid-area: img-nft;
+}
+
+/* fim do descrition */
+
+.popularweek{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin-bottom: 30px;
+}
+
+.popular-header{
+    width: 100%;
+    padding: 70px 80px;
+    margin-bottom: 40px;
+}
+
+.popular-header h1{
+    font-style: Bold;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 60px;
+}
+
+.popular-header h1>span{
+    color: #FF5B50;
+}
+
+.week-content{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.week-cards{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0px 80px;
+}
+
+.week-border{
+    border-right: 1px solid #5A5757;
+}
+
+.week-titulo{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.week-titulo >h3{
+    font-style: Medium;
+    font-size: 30px;
+    line-height: 37px;
+}
+
+.week-titulo label{
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.week-titulo label:nth-child(1){
+    color: #5A5757;
+}
+
+.week-titulo label:nth-child(2){
+    color: #FF5B50;
+}
+
+/* fim do populares da semana */
+
+.best-artist{
+    width: 100vw;
+    margin: 30px 0px 30px 0px;
+}
+
+.cabecalho-artistas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cabecalho-artistas >h1{
+    padding: 50px 0px;
+    font-size: 50px;
+    line-height: 61px;
+    font-style: Bold;
+}
+
+.cabecalho-artistas >h1>label{
+    color: #FF5B50;
+}
+
+.container{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    margin-bottom: 50px;
+}
+
+.descricao-cards label{
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.descricao-cards label:nth-child(2){
+    color: #FF5B50;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background: #252525;
+    padding: 10px 20px;
+}
+
+.selected-card{
+    background: #FF5B50;
+    color: #fff !important;
+}
+
+.selected-card label:nth-child(2){
+    color: #fff;
+}
+
+.cards >img{
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 100%;
+}
+
+.descricao-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-artistas{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.footer-artistas >label{
+    font-size: 20px;
+    font-weight: 400;
+    margin-right: 20px;
+}
+
+/* fim dos melhores artistas */
+
+.rodape{
+    background: #252525;
+}
+  
+.rocket-nfts{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 30px;
+    border-bottom: 1px solid #5A5757;
+}
+  
+.rocket-nfts h1{
+    font-size: 40px;
+    line-height: 49px;
+    font-style: Bold;
+}
+  
+.rocket-nfts h1 >label{
+    color: #FF5B50;
+}
+  
+.button-footer{
+    background: #FF5B50;
+    border: none;
+    width: 60px;
+    height: 60px;
+}
+
+.email-atividades{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    border-bottom: 1px solid #5A5757;
+}
+  
+.email{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px 25px;
+    width: 30%;
+    border-right: 1px solid #5A5757;
+}
+  
+.email label{
+    font-size: 30px;
+    line-height: 37px;
+}
+  
+.email label:nth-child(2){
+    color: #FF5B50;
+}
+
+.textfield{
+    margin-top: 20px;
+}
+
+.textfield > input , .btn-enviar{
+    padding: 10px;
+    border: none;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.btn-enviar{
+    color: #000;
+    background: #fff;
+}
+
+.textfield > input{
+    background: #000;
+}
+
+.textfield > input::placeholder{
+    color: #5A5757;
+}
+
+.atividades{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 30px;
+}
+  
+.atividades ul{
+    list-style-type: none;
+}
+  
+.atividades ul > li{
+    margin-top: 10px;
+    line-height: 24px;
+    font-size: 20px;
+    color: #5A5757;
+}
+
+.atividades > ul >li:nth-child(1){
+    color: #fff;
+}
+
+.contatos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 30px;
+}
+
+.contatos >ul{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    list-style-type: none;
+}
+
+.contatos >label{
+    color: #5A5757;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* fim do rodapé */
